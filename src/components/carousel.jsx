@@ -6,7 +6,7 @@ class CarouselComponent extends Component {
     render() {
         //const {loadImage, getText} = this.props;
         return(
-            <Carousel>
+            <Carousel className="m-2">
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
@@ -24,7 +24,6 @@ class CarouselComponent extends Component {
                         src={duckImage}
                         alt="Second slide"
                     />
-
                     <Carousel.Caption>
                         <h3>Second slide label</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -36,7 +35,6 @@ class CarouselComponent extends Component {
                         src={duckImage}
                         alt="Third slide"
                     />
-
                     <Carousel.Caption>
                         <h3>Third slide label</h3>
                         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>

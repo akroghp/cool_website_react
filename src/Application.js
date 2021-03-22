@@ -6,6 +6,7 @@ import {CardGroup} from "react-bootstrap";
 import CarouselComponent from "./components/carousel";
 import "bootstrap/dist/css/bootstrap.css";
 import duckImage from "./duckImage.jpeg";
+import AppFooter from "./components/appFooter";
 
 
 class App extends Component {
@@ -44,6 +45,7 @@ class App extends Component {
                         <CardComponent></CardComponent>
                     </CardGroup>
                 </React.Fragment>
+                <AppFooter/>
 
             </React.Fragment>
 
