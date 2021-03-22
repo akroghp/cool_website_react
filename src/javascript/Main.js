@@ -1,15 +1,15 @@
 import React, {Component} from 'react';
-import NavigationBar from "./components/navigationBar";
-import CardComponent from "./components/cardComponent";
-import Counters from "./components/counters";
+import NavigationBar from "../components/navigationBar";
+import CardComponent from "../components/cardComponent";
+import Counters from "../components/counters";
 import {CardGroup} from "react-bootstrap";
-import CarouselComponent from "./components/carousel";
+import CarouselComponent from "../components/carousel";
 import "bootstrap/dist/css/bootstrap.css";
-import duckImage from "./duckImage.jpeg";
-import AppFooter from "./components/appFooter";
+import duckImage from "../duckImage.jpeg";
+import AppFooter from "../components/appFooter";
 
 
-class App extends Component {
+class Main extends Component {
     state = {};
 
     constructor() {
@@ -53,4 +53,4 @@ class App extends Component {
 
     }
 }
-export default App;
+export default Main;
