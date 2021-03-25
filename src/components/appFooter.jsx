@@ -3,7 +3,6 @@ import {Nav, Navbar, Row, Container, Col} from 'react-bootstrap';
 import {COMPANY_NAME, COMPANY_SLOGAN} from "../Constants";
 
 const AppFooter = () => {
-
     return (
         <React.Fragment>
                 <Container fluid className="bg-dark text-white-50">
