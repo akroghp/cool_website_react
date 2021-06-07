@@ -4,16 +4,33 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {COMPANY_NAME, NAV_NAME_1, NAV_NAME_2, NAV_NAME_3, NAV_NAME_4, NAV_NAME_CONTACT, NAV_NAME_DROP_1,
     NAV_NAME_DROP_1_1, NAV_NAME_JOIN} from "../Constants"
 import {LinkContainer} from "react-router-bootstrap"
+import duckImage from "../duckImage.jpeg";
+import "../index.css"
 
 
 // Stateless Functional Component
+const sectionStyle = {
+    //backgroundImage: `url(${duckImage})`,
+    backgroundSize: "cover",
+    backgroundColor: "",
+
+}
+
+
 const NavigationBar = () => {
     return(
-        <React.Fragment>
-            <Navbar bg="dark" variant="dark" expand="lg" >
+        <div>
+            <Navbar variant="light"  expand="sm" className="">
                 <LinkContainer to="/">
-                    <Navbar.Brand href="#home">{COMPANY_NAME}
-                        <span className="badge badge-pill badge-secondary"></span>
+                    <Navbar.Brand className="">
+                        <img
+                            alt=""
+                            src="/logo192.png"
+                            width="30"
+                            height="30"
+                            className="d-inline-block align-top"
+                        />{' '}
+                        {COMPANY_NAME}
                     </Navbar.Brand>
                 </LinkContainer>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -51,7 +68,8 @@ const NavigationBar = () => {
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
-        </React.Fragment>
+        </div>
+
     );
 }
 

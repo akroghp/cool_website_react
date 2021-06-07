@@ -1,0 +1,81 @@
+.custom-background {
+    background-image: url("duckImage.jpeg");
+}
+
+.color-theme-main  {
+    color: #85DCB1 !important;
+}
+.color-theme-secondary {
+    color: #41B3A3 !important;
+}
+.color-theme-secondary2 {
+    color: #70dba6 !important;
+}
+.color-theme-red {
+    color: #E27D60 !important;
+}
+.color-theme-orange {
+    color: #E8A87C !important;
+}
+.color-theme-purple {
+    color: #C38D9E !important;
+}
+.color-theme-sand {
+    color: #F2E9CD !important;
+}
+
+.bg-color-theme-main{
+    background-color: #85DCB1 !important;
+}
+.bg-color-theme-secondary {
+    background-color: #41B3A3 !important;
+}
+.bg-color-theme-secondary2 {
+    background-color: #92e7bd !important;
+}
+.bg-color-theme-red {
+    background-color: #E27D60 !important;
+}
+.bg-color-theme-orange {
+    background-color: #E8A87C !important;
+}
+.bg-color-theme-purple {
+    background-color: #C38D9E !important;
+}
+.bg-color-theme-sand {
+    background-color: #F2E9CD !important;
+}
+
+.carousel-item:after {
+    content:"";
+    display:block;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:rgba(0,0,0,0.3);
+}
+.card-img-overlay{
+    background:rgba(0,0,0,0.3);
+}
+h1{
+    font-size: 6vw !important;
+}
+h2{
+    font-size: 4.5vw !important;
+}
+h3{
+    font-size: 3vh !important;
+}
+h4{
+    font-size: calc(1.3vh + 1.3vw) !important;
+}
+
+h5{
+    font-size: calc(1.1vh + 1.1vw) !important;
+}
+
+body {
+    font-family: 'Oxygen', sans-serif !important;
+}

@@ -1,22 +1,20 @@
 import React, {Component} from 'react';
 import {Button, Card} from 'react-bootstrap';
 import duckImage from '../duckImage.jpeg'
+import "../index.css"
 
 const CardComponent = () => {
     //const {loadImage, getText} = this.props;
 
     return(
-        <Card style={{ width: '18rem' }} className="m-2">
-            <Card.Img variant="top" src={duckImage} />
-            <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of
-                    the card's content.
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-            </Card.Body>
-        </Card>
+            <Card className="m-2 bg-color-theme-main shadow-sm text-white">
+                <Card.Img src="https://picsum.photos/1000/400" alt="Card image"  />
+                <Card.ImgOverlay className="d-flex flex-column">
+                    <Card.Title className="mt-auto m-0"><Card.Link href="#">Card title</Card.Link></Card.Title>
+                    <Card.Text>Last updated 3 mins ago</Card.Text>
+                </Card.ImgOverlay>
+            </Card>
+
     );
 
 }

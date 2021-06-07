@@ -1,48 +1,48 @@
 import React, {Component} from 'react';
 import {Carousel} from 'react-bootstrap';
 import duckImage from "../duckImage.jpeg"
+import "../index.css"
 
-class CarouselComponent extends Component {
-    render() {
-        //const {loadImage, getText} = this.props;
-        return(
-            <Carousel className="m-2">
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src={duckImage}
-                        alt="First slide"
-                    />
-                    <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src={duckImage}
-                        alt="Second slide"
-                    />
-                    <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src={duckImage}
-                        alt="Third slide"
-                    />
-                    <Carousel.Caption>
-                        <h3>Third slide label</h3>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-            </Carousel>
-        );
-    }
+const CarouselComponent  = (props) =>  {
+    return(
+
+        <Carousel className="shadow">
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={props.imgFile3}
+                    alt="firstdingus"
+                />
+                <Carousel.Caption>
+                    <h3>{props.title1}</h3>
+                    <p>{props.description1}</p>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={props.imgFile2}
+                    alt="asdfasdfas"
+                />
+                <Carousel.Caption>
+                    <h3>{props.title2}</h3>
+                    <p>{props.description2}</p>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={props.imgFile3}
+                    alt="sadkfmalskdfæashido"
+                />
+                <Carousel.Caption>
+                    <h3>{props.title3}</h3>
+                    <p>{props.description3}</p>
+                </Carousel.Caption>
+            </Carousel.Item>
+        </Carousel>
+    );
+
 
 
 }

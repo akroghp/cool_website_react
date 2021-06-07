@@ -5,9 +5,9 @@ import {COMPANY_NAME, COMPANY_SLOGAN} from "../Constants";
 const AppFooter = () => {
     return (
         <React.Fragment>
-                <Container fluid className="bg-dark text-white-50">
+                <Container fluid variant="light" className="">
                     <Row className="mx-auto">
-                        <Col className="d-flex justify-content-center mt-4 text-white">
+                        <Col className="d-flex justify-content-center mt-4">
                             <ul className="list-unstyled">
                                 <li><h2>{COMPANY_NAME}</h2></li>
                                 <li><p>{COMPANY_SLOGAN}</p></li>
@@ -15,18 +15,18 @@ const AppFooter = () => {
                         </Col>
                         <Col className="d-flex justify-content-center mt-4">
                             <ul className="list-unstyled">
-                                <li><h5 className="text-white">Contact</h5></li>
+                                <li><h5>Contact</h5></li>
                                 <li>info@aqfeed.com</li>
-                                <li></li>
+                                <li>phone: +45 12345678</li>
                                 <li></li>
                             </ul>
                         </Col>
                         <Col className="d-flex justify-content-center mt-4">
                             <ul className="list-unstyled">
-                                <li><h5 className="text-white">Social media</h5></li>
-                                <li><a href="#" className="text-white-50">LinkedIn</a></li>
-                                <li><a href="#" className="text-white-50">Youtube</a></li>
-                                <li><a href="#" className="text-white-50">Facebook</a></li>
+                                <li><h5>Social media</h5></li>
+                                <li><a href="#">LinkedIn</a></li>
+                                <li><a href="#">Youtube</a></li>
+                                <li><a href="#">Facebook</a></li>
                             </ul>
                         </Col>
                     </Row>
