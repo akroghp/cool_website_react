@@ -1,36 +1,84 @@
 import React from 'react';
-import {Navbar, Nav, NavDropdown, Form, FormControl, Button} from 'react-bootstrap';
+import {Navbar, Nav} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {COMPANY_NAME, NAV_NAME_1, NAV_NAME_2, NAV_NAME_3, NAV_NAME_4, NAV_NAME_CONTACT, NAV_NAME_DROP_1,
-    NAV_NAME_DROP_1_1, NAV_NAME_JOIN} from "../Constants"
+import {NAV_NAME_1, NAV_NAME_2, NAV_NAME_3, NAV_NAME_4, NAV_NAME_CONTACT, NAV_NAME_JOIN} from "../Constants"
 import {LinkContainer} from "react-router-bootstrap"
-import duckImage from "../duckImage.jpeg";
+
 import "../index.css"
+//import "../navbar.css"
+
+/*
+const firebaseConfig = {
+    apiKey: "AIzaSyB_bYolD1SWQdh02S0XmTFnvIdiB7jREmk",
+    authDomain: "afeed-15838.firebaseapp.com",
+    projectId: "afeed-15838",
+    storageBucket: "afeed-15838.appspot.com",
+    messagingSenderId: "130740375331",
+    appId: "1:130740375331:web:aba1693c1ffc9f77a60696",
+    measurementId: "G-0ECW46Y4JR"
+};
 
 
-// Stateless Functional Component
-const sectionStyle = {
-    //backgroundImage: `url(${duckImage})`,
-    backgroundSize: "cover",
-    backgroundColor: "",
+firebase.initializeApp(firebaseConfig)
 
-}
+const storage = firebase.storage();
+const storageRef = storage.ref()
+
+storageRef.child('Public/LogoAnton2.png').getDownloadURL()
+    .then((url) => {
+        // `url` is the download URL for 'images/stars.jpg'
+        console.log(url)
+        // This can be downloaded directly:
+        const xhr = new XMLHttpRequest();
+        xhr.responseType = 'blob';
+        xhr.onload = (event) => {
+            const blob = xhr.response;
+        };
+        xhr.open('GET', url);
+        xhr.send();
+
+        // Or inserted into an <img> element
+        const img = document.getElementById('AQfeedLogo1');
+        img.setAttribute('src', url);
+    })
+    .catch((error) => {
+        // A full list of error codes is available at
+        // https://firebase.google.com/docs/storage/web/handle-errors
+        switch (error.code) {
+            case 'storage/object-not-found':
+                // File doesn't exist
+                console.log(error)
+                break;
+            case 'storage/unauthorized':
+                // User doesn't have permission to access the object
+                console.log(error)
+                break;
+            case 'storage/canceled':
+                // User canceled the upload
+                console.log(error)
+                break;
+            case 'storage/unknown':
+                // Unknown error occurred, inspect the server response
+                console.log(error)
+                break;
+        }
+    });
 
 
+ */
 const NavigationBar = () => {
     return(
-        <div>
-            <Navbar variant="light"  expand="sm" className="">
+        <div >
+            <Navbar variant="light"  expand="sm" className={"position-fixed bg-light w-100"}>
                 <LinkContainer to="/">
-                    <Navbar.Brand className="">
+                    <Navbar.Brand className="img-container">
                         <img
-                            alt=""
-                            src="/logo192.png"
-                            width="30"
-                            height="30"
+                            alt={""}
+                            src="https://firebasestorage.googleapis.com/v0/b/afeed-15838.appspot.com/o/Public%2FLogoAnton2.png?alt=media&token=a26151d7-8167-46a4-91c5-e6d360bd53fb"
+                            width="100px"
+                            height="40px"
                             className="d-inline-block align-top"
-                        />{' '}
-                        {COMPANY_NAME}
+                        />
                     </Navbar.Brand>
                 </LinkContainer>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />

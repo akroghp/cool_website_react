@@ -1,3 +1,7 @@
+.Main{
+    display: flex;
+    justify-content: center;
+}
 .custom-background {
     background-image: url("duckImage.jpeg");
 }
@@ -23,6 +27,13 @@
 .color-theme-sand {
     color: #F2E9CD !important;
 }
+.color-theme-black {
+    color: #1a1818 !important;
+}
+
+.color-theme-whiteish {
+    color: #f3f3f3 !important;
+}
 
 .bg-color-theme-main{
     background-color: #85DCB1 !important;
@@ -45,6 +56,12 @@
 .bg-color-theme-sand {
     background-color: #F2E9CD !important;
 }
+.bg-color-theme-whiteish {
+    background-color: #f3f3f3 !important;
+}
+.bg-color-theme-black {
+    background-color: #1a1818 !important;
+}
 
 .carousel-item:after {
     content:"";
@@ -61,6 +78,7 @@
 }
 h1{
     font-size: 6vw !important;
+    font-family: 'Ubuntu', sans-serif;
 }
 h2{
     font-size: 4.5vw !important;
