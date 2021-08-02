@@ -4,7 +4,6 @@ video {
     height: 100%;
     position: absolute;
     z-index: -1;
-    margin-top: 50px;
 }
 
 .hero-container{
@@ -17,7 +16,8 @@ video {
     flex-direction: column;
     align-items: center;
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2);
-    object-fit: contain;
+    object-fit: cover;
+    z-index: 0;
 }
 
 .hero-container > h1 {
@@ -33,7 +33,8 @@ video {
     color: #ffffff;
     font-size:  32px;
     margin-top: 8px;
-    font-family: 'Trebuchet MS', "Lucida GS", Arial, sans-serif;
+    font-family: "Raleway", sans-serif !important;
+    font-weight: lighter !important;
 }
 
 

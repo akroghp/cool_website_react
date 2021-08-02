@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {Button, Card, Col, Container, Row} from 'react-bootstrap';
-import {render} from "@testing-library/react";
 
 
 const TextComponent = (props) => {

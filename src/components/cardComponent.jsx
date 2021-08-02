@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {Button, Card} from 'react-bootstrap';
-import duckImage from '../duckImage.jpeg'
-import "../index.css"
+import "../css/index.css"
 
 const CardComponent = () => {
     //const {loadImage, getText} = this.props;

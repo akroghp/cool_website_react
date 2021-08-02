@@ -2,15 +2,22 @@
     display: flex;
     justify-content: center;
 }
-.custom-background {
-    background-image: url("duckImage.jpeg");
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.logo_design {
+    font-family: 'Raleway', sans-serif;
+    color: #5fb1c9 !important;
+    font-weight: bold !important;
+    font-size: 300% !important;
 }
 
 .color-theme-main  {
     color: #85DCB1 !important;
 }
 .color-theme-secondary {
-    color: #41B3A3 !important;
+    color: #84c19f !important;
 }
 .color-theme-secondary2 {
     color: #70dba6 !important;
@@ -19,10 +26,13 @@
     color: #E27D60 !important;
 }
 .color-theme-orange {
-    color: #E8A87C !important;
+    color: #fc8c04 !important;
 }
 .color-theme-purple {
-    color: #C38D9E !important;
+    color: #6b71bb !important;
+}
+.color-theme-blue {
+    color: #247484 !important;
 }
 .color-theme-sand {
     color: #F2E9CD !important;
@@ -30,6 +40,7 @@
 .color-theme-black {
     color: #1a1818 !important;
 }
+.color-theme-orange
 
 .color-theme-whiteish {
     color: #f3f3f3 !important;
@@ -60,7 +71,7 @@
     background-color: #f3f3f3 !important;
 }
 .bg-color-theme-black {
-    background-color: #1a1818 !important;
+    background-color: #000000 !important;
 }
 
 .carousel-item:after {
@@ -77,14 +88,11 @@
     background:rgba(0,0,0,0.3);
 }
 h1{
-    font-size: 6vw !important;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 h2{
-    font-size: 4.5vw !important;
 }
 h3{
-    font-size: 3vh !important;
 }
 h4{
     font-size: calc(1.3vh + 1.3vw) !important;
@@ -93,7 +101,11 @@ h4{
 h5{
     font-size: calc(1.1vh + 1.1vw) !important;
 }
+img{
+    border-radius: 20px !important;
+}
 
 body {
-    font-family: 'Oxygen', sans-serif !important;
+    font-family: 'Raleway', sans-serif !important;
 }
+

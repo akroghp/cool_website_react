@@ -1,8 +1,6 @@
 import React from 'react';
 import {Button, ButtonGroup} from "react-bootstrap";
-//import "../index.css"
-import "./HeroSection.css"
-import ReactPlayer from 'react-player'
+import "../css/HeroSection.css"
 import testVid from './video/video-2.mp4'
 
 

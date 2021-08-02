@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {Carousel} from 'react-bootstrap';
-import duckImage from "../duckImage.jpeg"
-import "../index.css"
+import "../css/index.css"
 
 const CarouselComponent  = (props) =>  {
     return(
