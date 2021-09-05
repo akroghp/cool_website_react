@@ -1,11 +1,11 @@
 import React from 'react';
-import {Navbar, Nav} from 'react-bootstrap';
+import {Navbar, Nav, NavDropdown} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {NAV_NAME_1, NAV_NAME_2, NAV_NAME_3, NAV_NAME_4, NAV_NAME_CONTACT, NAV_NAME_JOIN} from "../Constants"
 import {LinkContainer} from "react-router-bootstrap"
 
 import "../css/index.css"
-//import "../navbar.css"
+import "../css/navbar.css"
 
 /*
 const firebaseConfig = {
@@ -69,50 +69,51 @@ storageRef.child('Public/LogoAnton2.png').getDownloadURL()
 const NavigationBar = () => {
     return(
         <div >
-            <Navbar variant="light"  expand="sm" className={"position-relative bg-white w-100 "}>
+            <Navbar expand="sm" className={"position-absolute w-100 fixed_navbar_height"}>
                 <LinkContainer to="/">
-                    {/**
-                    <Navbar.Brand className="img-container mx-auto">
+                    <Navbar.Brand href="#home" className="">
                         <img
-                            alt={""}
-                            src="https://firebasestorage.googleapis.com/v0/b/afeed-15838.appspot.com/o/Public%2FLogoAnton2.png?alt=media&token=a26151d7-8167-46a4-91c5-e6d360bd53fb"
-                            width="150px"
-                            height="60px"
-                            className="d-inline-block align-top"
+                            src="https://firebasestorage.googleapis.com/v0/b/afeed-15838.appspot.com/o/Public%2Flogos%2Flogo_green_no_motto.png?alt=media&token=739fa523-a37a-4b72-8455-daaeff7bb7c6"
+                            className="d-inline-block align-top img_responsive"
                         />
                     </Navbar.Brand>
-                     **/}
+                    {/**
                      <Navbar.Brand className="d-inline-block align-top logo_design pl-4">
                          AQ<span className="color-theme-purple">feed</span>
                      </Navbar.Brand>
+                     **/}
                 </LinkContainer>
-                {/**
 
-                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav ">
+
+                {/*
+
                     <Nav className="mr-auto">
                         <LinkContainer to="/about">
-                            <Nav.Link>{NAV_NAME_1}</Nav.Link>
+                            <Nav.Link>{"NAV_NAME_1"}</Nav.Link>
                         </LinkContainer>
                         <LinkContainer to="/technology">
-                            <Nav.Link>{NAV_NAME_2}</Nav.Link>
+                            <Nav.Link>{"NAV_NAME_2"}</Nav.Link>
                         </LinkContainer>
                         <LinkContainer to="/news">
-                            <Nav.Link>{NAV_NAME_3}</Nav.Link>
+                            <Nav.Link>{"NAV_NAME_3"}</Nav.Link>
                         </LinkContainer>
                         <LinkContainer to="/team">
-                            <Nav.Link>{NAV_NAME_4}</Nav.Link>
+                            <Nav.Link>{"asd"}</Nav.Link>
                         </LinkContainer>
 
-                        <NavDropdown title={NAV_NAME_DROP_1} id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">{NAV_NAME_DROP_1_1}</NavDropdown.Item>
+                        <NavDropdown title={"asdf"} id="basic-nav-dropdown">
+                            <NavDropdown.Item href="#action/3.1">{"NAV_NAME_DROP_1_1"}</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
-                    <Nav>
+                    */}
+                    <Nav className="ml-auto p-2">
                         <LinkContainer to="/contact">
                             <Nav.Link href="#deets">{NAV_NAME_CONTACT}</Nav.Link>
                         </LinkContainer>
@@ -122,7 +123,8 @@ const NavigationBar = () => {
                         </LinkContainer>
                     </Nav>
                 </Navbar.Collapse>
-                 **/ }
+
+
             </Navbar>
         </div>
 

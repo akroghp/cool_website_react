@@ -6,22 +6,29 @@ import {Route} from "react-router-dom";
 
 function BannerComponent() {
     return (
-        <div className="py-5 bg-color-theme-black">
-            <Container fluid className="bg-color-theme-black nopadding color-theme-secondary">
-                <Row className="text-center text-white">
-                    <Col>
-                        <img
-                        src="https://firebasestorage.googleapis.com/v0/b/afeed-15838.appspot.com/o/Public%2Ficons%2Ftruck_icon.png?alt=media&token=b460b592-1a4c-4926-b948-8d2619760ac0"/>
-                        <h5>Transporting fish manure from local land-based aquacultures.</h5>
+        <div className="py-5 bg-color-theme-dark-blue img_background2_banner ">
+            <Container fluid className="color-theme-secondary">
+                <Row className="text-center text-white align-items-center justify-content-center">
+                    <Col className="mx-5 col-md-2">
+                        <img className="p-2"
+                            height="100px"
+                            width="100px"
+                        src="https://firebasestorage.googleapis.com/v0/b/afeed-15838.appspot.com/o/Public%2Ficons%2Fdelivery_van_white.png?alt=media&token=89b0873d-f8b7-4210-9148-c069ac56c5d8"/>
+                        <p>Collecting sludge from local aquacultures.</p>
                     </Col>
-                    <Col>
-                        <img
-                        src="https://firebasestorage.googleapis.com/v0/b/afeed-15838.appspot.com/o/Public%2Ficons%2Fupcycle_earth_icon_no_border.png?alt=media&token=687bb835-c024-4daf-b440-2731873fca98"/>
-                        <h5>Upcycling sludge and turning it into biological resources.</h5>
-
+                    <Col className="mx-5 col-md-2">
+                        <img className="p-2"
+                            height="100px"
+                            width="100px"
+                        src="https://firebasestorage.googleapis.com/v0/b/afeed-15838.appspot.com/o/Public%2Ficons%2Frecycle_plant_white.png?alt=media&token=2ac4d08e-7555-46ae-8d88-efebaa2845f2"/>
+                        <p>Upcycling the sludge into biological resources.</p>
                     </Col>
-                    <Col>
-                        <h1>POOP</h1>
+                    <Col className="mx-5 col-md-2">
+                        <img className="p-2"
+                             height="100px"
+                             width="100px"
+                             src="https://firebasestorage.googleapis.com/v0/b/afeed-15838.appspot.com/o/Public%2Ficons%2Fpackage_white.png?alt=media&token=f26bef85-c803-46fb-b66c-914d1830f07e"/>
+                        <p>Produce sustainable fish feed.</p>
                     </Col>
                 </Row>
             </Container>

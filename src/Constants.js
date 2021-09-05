@@ -3,8 +3,8 @@ import React from 'react';
 
 
 // Navigation bar
-export const COMPANY_NAME = "Sealett";
-export const COMPANY_SLOGAN = "The sustainable alternative for fish feed."
+export const COMPANY_NAME = "AQfeed";
+export const COMPANY_SLOGAN = "Turning waste into feed."
 export const COMPANY_SLOGAN1 = "Sustainable feed for sustainable fish."
 export const NAV_NAME_1 = "About Us";
 export const NAV_NAME_2 = "The Technology";
