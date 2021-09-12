@@ -143,8 +143,7 @@ class Main extends Component {
                     <Container fluid >
                         <Row className="fixed_height text-center">
                             <Col className="align-self-center col-sm-12 d-table">
-                                <h2 className="font-weight-bold">Interested in hearing more?<br/>
-                                Please don't hesitate to contact us.</h2>
+                                <h2 className="font-weight-bold">Interested in hearing more?</h2>
 
                                 <Button href="mailto:home@aqfeed.dk" className="btn-light rounded-pill">Contact us</Button>
                             </Col>
