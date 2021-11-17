@@ -115,6 +115,36 @@ class Main extends Component {
                         </Row>
                     </Container>
 
+                    {/*Traction Page - Dark blue theme*/}
+                    <Container fluid className="nopadding ">
+                        <Row className="fixed_height text-center  p-5 ">
+
+                            <Col className=" d-flex col-12 col-sm-6">
+                                <div className="my-auto mx-auto">
+                                    <div className="square-white p-3">
+                                        <div className="align-items-center ">
+                                            <img src={'https://mikrolegat.ffe-ye.dk/media/793220/mikrolegat-uden-baggrund.png'} height={'75px'}/>
+                                            <p className="text-justify">We are happy to announce that AQfeed has
+                                                received the Mikrolegat Foundation for Entrepreneurship
+                                                micro-scholarship worth 50,000 DKK! <br/>
+                                                The scholarship money will be used to buy hardware and materials for
+                                                the development of our new prototype,
+                                                which will enable us to mature as a start-up!</p>
+                                            <Button href="https://www.linkedin.com/feed/update/urn:li:activity:6864897890909753344"
+                                                    className="btn-info rounded-pill float-right">Read more on LinkedIn!</Button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </Col>
+                            <Col className=" d-flex col-12 col-sm-6 img_mikrolegat ">
+                                <div className="my-auto mx-auto">
+                                    <div className="px-5">
+                                    </div>
+                                </div>
+                            </Col>
+                        </Row>
+                    </Container>
+
                     {/*Page split in two
                     <section>
                         <Container fluid className="nopadding">

@@ -212,9 +212,18 @@ body {
     background-image: url("https://venturecup.dk/wp-content/uploads/2021/08/9-min.png");
     background-position: center;
     background-size: cover;
-
-
 }
+
+.img_mikrolegat{
+    height: auto;
+    width: 500px;
+    position: center;
+    background-image: url(../1636641510168.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+
 .square {
     width:auto;
     height:auto;
